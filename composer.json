@@ -10,13 +10,19 @@
         }
     ],
     "minimum-stability": "dev",
-	"require": {
-		"yiisoft/yii2": "~2.0.0",
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
         "ckeditor/ckeditor5-core" : "~19.0"
-	},
-	"autoload": {
-		"psr-4": {
-			"whitemiku\\ckeditor5\\": ""
-		}
-	}
+    },
+    "autoload": {
+        "psr-4": {
+            "whitemiku\\ckeditor5\\": ""
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
 }
