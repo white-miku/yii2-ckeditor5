@@ -28,7 +28,7 @@ Usage
 Once the extension is installed, simply use it in your code by:
 
 ```php
-use \stkevich\ckeditor5\EditorClassic;
+use \whitemiku\ckeditor5\EditorClassic;
 ...
 $form->field($model, 'fieldName')->widget(EditorClassic::className(), []);
 ```
