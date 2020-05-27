@@ -55,9 +55,104 @@ abstract class CKEditor5 extends InputWidget
     {
         if (!empty($this->toolbar)) {
             $this->clientOptions['toolbar'] = $this->toolbar;
+        } else {
+        	$this->clientOptions['toolbar'] = ['heading',
+						'|',
+						'bold',
+						'italic',
+						'underline',
+						'strikethrough',
+						'|',
+						'fontColor',
+						'fontBackgroundColor',
+						'alignment',
+						'|',
+						'bulletedList',
+						'numberedList',
+						'|',
+						'link',
+						'blockQuote',
+						'insertTable',
+						'horizontalLine',
+						'|',
+						'removeFormat'];
         }
         if (!empty($this->uploadUrl)) {
             $this->clientOptions['ckfinder'] = ['uploadUrl' => $this->uploadUrl];
+        }
+        if (!empty($this->colorsList)) {
+        	$this->clientOptions['fontColor']['colors'] = $this->colorsList;
+        	$this->clientOptions['fontBackgroundColor']['colors'] = $this->colorsList;
+        } else {
+        	$colors = [
+        [
+						'color' => '#000000',
+						'label' => 'Чёрный'
+					],
+					[
+						'color' => '#4d4d4d',
+						'label' => 'Тёмно-серый'
+					],
+					[
+						'color' => '#999999',
+						'label' => 'Серый'
+					],
+					[
+						'color' => '#E6E6E6',
+						'label' => 'Светло-серый'
+					],
+					[
+						'color' => '#ffffff',
+						'label' => 'Белый',
+						'hasBorder' => 'true'
+					],
+					[
+						'color' => '#E64C4C',
+						'label' => 'Красный'
+					],
+					[
+						'color' => '#E6994C',
+						'label' => 'Оранжевый'
+					],
+					[
+						'color' => '#E6E64C',
+						'label' => 'Жёлтый'
+					],
+					[
+						'color' => '#99E64C',
+						'label' => 'Салатовый'
+					],
+					[
+						'color' => '#4CE64C',
+						'label' => 'Зелёный'
+					],
+					[
+						'color' => '#4CE699',
+						'label' => 'Аквамариновый'
+					],
+					[
+						'color' => '#4CE6E6',
+						'label' => 'Бирюзовый'
+					],
+					[
+						'color' => '#4C99E6',
+						'label' => 'Голубой'
+					],
+					[
+						'color' => '#4C4CE6',
+						'label' => 'Синий'
+					],
+					[
+						'color' => '#994CE6',
+						'label' => 'Фиолетовый'
+					],
+					[
+						'color' => '#ff426a',
+						'label' => 'Penka!'
+					],
+					];
+        	$this->clientOptions['fontColor']['colors'] = $colors;
+        	$this->clientOptions['fontBackgroundColor']['colors'] = $colors;
         }
         $clientOptions = Json::encode($this->clientOptions);
 

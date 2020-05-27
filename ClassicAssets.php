@@ -11,14 +11,7 @@ use yii\web\AssetBundle;
 
 class ClassicAssets extends AssetBundle
 {
-
-    public $css = [
-    ];
-
-    public $js = [
-        'https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js',
-    ];
-
-    public $depends = [
+	public $js = [
+        '/js/ckeditor/ckeditor.js',
     ];
 }
