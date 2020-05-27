@@ -1,21 +1,28 @@
 {
-    "name": "stkevich/yii2-ckeditor5",
-    "description": "ckeditor 5 widget for yii2 framework",
-    "type": "extension",
+    "name": "white-miku/yii2-ckeditor5",
+    "description": "CKEditor 5 widget for Yii2 framework",
+    "type": "yii2-extension",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
-            "name": "Stas Kevich",
-            "email": "st.kevich@gmail.com"
+            "name": "White Miku",
+            "email": "mi@white-miku.me"
         }
     ],
     "minimum-stability": "dev",
-	"require": {
-		"yiisoft/yii2": "~2.0.0"
-	},
-	"autoload": {
-		"psr-4": {
-			"stkevich\\ckeditor5\\": ""
-		}
-	}
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "whitemiku\\ckeditor5\\": ""
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
 }
