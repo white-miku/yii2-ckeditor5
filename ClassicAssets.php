@@ -14,7 +14,6 @@ class ClassicAssets extends AssetBundle
     public $publishOptions = [
         'only' => [
             'js/*',
-            'js/translations/*'
         ],
     ];
 }
