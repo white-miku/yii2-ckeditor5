@@ -5,7 +5,15 @@ use yii\web\AssetBundle;
 
 class ClassicAssets extends AssetBundle
 {
-	public $js = [
-        '/js/ckeditor/ckeditor.js',
+    public $sourcePath = '@vendor/white-miku/yii2-ckeditor5/assets';
+
+    public $js = [
+        'js/ckeditor.js',
+    ];
+
+    public $publishOptions = [
+        'only' => [
+            'js/*',
+        ],
     ];
 }
