@@ -26,9 +26,9 @@ Then run `composer update`.
 Usage
 -----
 
-The package has an built-in CKE5 v.19.0.0 package with following modules included: `heading, bold, italic, underline, strikethrough, fontColor, fontBackgroundColor, alignment, bulletedList, numberedList, link, blockQuote, insertTable, horizontalLine, removeFormat`.
+The package has an built-in CKE5 v.19.0.0 package with following modules included: `heading, bold, italic, underline, strikethrough, fontColor, fontBackgroundColor, alignment, bulletedList, numberedList, link, blockQuote, insertTable, horizontalLine, removeFormat` and on russian language.
 
-If you need, you can download [prebuilt](https://ckeditor.com/ckeditor-5/download/) package or [build your own](https://ckeditor.com/ckeditor-5/online-builder/) package and replace files `ckeditor.js` and `ckeditor.map` in the `@vendor/white-miku/ckeditor5/assests/js` folder.
+If you need, you can download [prebuilt](https://ckeditor.com/ckeditor-5/download/) package or [build your own](https://ckeditor.com/ckeditor-5/online-builder/) package and replace files `ckeditor.js` and `ckeditor.js.map` in the `@vendor/white-miku/ckeditor5/assests/js` folder.
 
 Once the extension is installed, simply use it in your code by:
 
